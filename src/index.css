@@ -76,9 +76,17 @@ body {
     letter-spacing: 1px;
 }
 
-.active {
+.nav-link:hover {
+    color: green !important;
+    cursor: pointer;
+}
+
+.active,
+.active:hover {
     color: blue !important;
 }
+
+
 
 
 .scroll-on {
