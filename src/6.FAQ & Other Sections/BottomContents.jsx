@@ -74,7 +74,7 @@ const BottomContents = () => {
                 </h2>
               </div>
               <div className="col-lg-3 col-md-12 mt-lg-0 mt-4">
-                <button className="main-btn">Learn more</button>
+                <button className="main-btn">Book now</button>
               </div>
             </div>
           </div>

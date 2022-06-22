@@ -23,7 +23,9 @@ const Testimonials = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Repudiandae incidunt esse rem fugit culpa?
                       </p>
-                      <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                      <h5 className="text-dark">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </h5>
                     </div>
                     <div className="carousel-item">
                       <img src={profile2} className="d-block w-100" alt="..." />
@@ -31,7 +33,9 @@ const Testimonials = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Repudiandae incidunt esse rem fugit culpa?
                       </p>
-                      <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                      <h5 className="text-dark">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </h5>
                     </div>
                   </div>
                   <button

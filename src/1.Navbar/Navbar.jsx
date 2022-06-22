@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../images/logo.png";
 import { FaStream } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   useEffect(() => {
@@ -24,9 +25,9 @@ const Navbar = () => {
     <header>
       <nav className="navbar navbar-expand-lg navigation-wrap px-lg-4 py-lg-3 fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img className="nav-logo" src={logo} />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -43,34 +44,37 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item mx-2">
-                <a className="nav-link" aria-current="page" href="#home">
+                <Link
+                  spy={true}
+                  className="nav-link"
+                  aria-current="page"
+                  to="home"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#about">
+                <Link spy={true} className="nav-link" to="about">
                   About us
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#explore-food">
+                <Link spy={true} className="nav-link" to="explore-food">
                   Explore Foods
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#testimonial">
+                <Link spy={true} className="nav-link" to="testimonial">
                   Reviews
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#faq">
+                <Link spy={true} className="nav-link" to="faq">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-2">
-                <button className="main-btn" href="#">
-                  1200 345 121
-                </button>
+                <button className="main-btn">1200 345 121</button>
               </li>
             </ul>
           </div>
