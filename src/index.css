@@ -1,13 +1,337 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&display=swap');
+
+.nav-logo {
+    max-height: 50px;
+    max-width: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* a:hover {
+    color: black !important;
+} */
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+.main-btn {
+    background-color: red;
+    color: white;
+    padding: 0.625rem 1.875rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.main-btn:hover {
+    background: transparent;
+    color: red;
+    transition: .3s ease-in-out;
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.navigation-wrap {
+    transition: .3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.1);
+    transition: all .15s ease-in-out 0s;
+}
+
+
+.top-banner {
+    width: 100%;
+    background: url('./images/bg-8.jpg') no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+    min-height: 715px;
+}
+
+.counter-section {
+    background-color: red;
+    padding: 2.5rem 0;
+}
+
+.counter-section p,
+h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.about-section {
+    background: white;
+}
+
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+
+.food-type {
+    padding-top: 3.25rem;
+}
+
+.food-type ul li {
+    font-size: 1rem;
+    color: black;
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before {
+    position: absolute;
+    left: -2.1875rem;
+    color: red;
+    font-size: 1.25rem;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+
+.story-section {
+    width: 100%;
+    height: 28.125rem;
+    background: url('./images/bg-4.png') no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+.explore-food .card img {
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
+    padding-bottom: 1rem;
+    border-bottom: 0.0652rem solid white;
+}
+
+.explore-food .card span del {
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+.testimonial-section {
+    background-color: red;
+}
+
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 1rem 3.125rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item img {
+    margin-left: 34%;
+    max-width: 20rem;
+    border-radius: 50%;
+    padding: 0.315rem;
+}
+
+.testimonial-section .carousel-item .carousel-caption p {
+    font-size: 1.3125rem;
+    line-height: 2.065rem;
+    padding: 0 11% 0.625rem;
+}
+
+.carousel-indicators {
+    position: static;
+    margin-top: 2rem !important;
+}
+
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active {
+    opacity: 1 !important;
+}
+
+.book-food {
+    width: 100%;
+    background: url('./images/bg-5.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+.newsletter {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    height: 2.8rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid gray;
+    color: black;
+    font-weight: 700;
+}
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: red;
+}
+
+.footer {
+    background: red;
+}
+
+.footer .footer-link {
+    font-size: 1rem;
+    color: white;
+    padding: 0 1.875rem;
+}
+
+.footer a i {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+@media (max-width:991px) {
+    .navigation-wrap {
+        text-align: center;
+        background: white;
+    }
+
+    .testimonial-section .carousel-item img {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width:767px) {
+    .story-section {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .testimonial-section .carousel-item img {
+        margin-left: 2%;
+    }
+
+    .newsletter {
+        width: 85%;
+    }
+
+    .newsletter .main-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer .footer-link,
+    .footer a i {
+        padding: 0 0.7rem;
+    }
+
 }
