@@ -11,7 +11,7 @@ const Counter = () => {
       let timer = setInterval(() => {
         current += increment;
         obj.textContent = current + "+";
-        if (current == end) {
+        if (current === end) {
           clearInterval(timer);
         }
       }, step);

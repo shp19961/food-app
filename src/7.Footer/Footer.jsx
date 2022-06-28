@@ -15,45 +15,53 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <a href="#" className="footer-link">
+              <a href="/" className="footer-link">
                 Register
               </a>
-              <a href="#" className="footer-link">
+
+              <a href="/" className="footer-link">
                 Forum
               </a>
-              <a href="#" className="footer-link">
+
+              <a href="/" className="footer-link">
                 Affiliate
               </a>
-              <a href="#" className="footer-link">
+
+              <a href="/" className="footer-link">
                 FAQ
               </a>
               <div className="footer-social pt-4 text-center">
-                <a href="#">
+                <a href="/">
                   <i>
                     <FaFacebookF />
                   </i>
                 </a>
-                <a href="#">
+
+                <a href="/">
                   <i>
                     <FaTwitter />
                   </i>
                 </a>
-                <a href="#">
+
+                <a href="/">
                   <i>
                     <FaYoutube />
                   </i>
                 </a>
-                <a href="#">
+
+                <a href="/">
                   <i>
                     <FaDribbble />
                   </i>
                 </a>
-                <a href="#">
+
+                <a href="/">
                   <i>
                     <FaLinkedin />
                   </i>
                 </a>
-                <a href="#">
+
+                <a href="/">
                   <i>
                     <FaInstagramSquare />
                   </i>

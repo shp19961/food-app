@@ -15,18 +15,16 @@ const Navbar = () => {
     };
   }, []);
 
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", function () {
-      document.getElementById("navbarNav").classList.remove("show");
-    });
-  });
+  const closeNavCollapse = () => {
+    document.getElementById("navbarNav").classList.remove("show");
+  };
 
   return (
     <header>
       <nav className="navbar navbar-expand-lg navigation-wrap px-lg-4 py-lg-3 fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img className="nav-logo" src={logo} />
+            <img className="nav-logo" src={logo} alt="...." />
           </Link>
           <button
             className="navbar-toggler"
@@ -45,6 +43,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item mx-2">
                 <Link
+                  onClick={closeNavCollapse}
                   spy={true}
                   className="nav-link"
                   aria-current="page"
@@ -54,22 +53,42 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item mx-2">
-                <Link spy={true} className="nav-link" to="about">
+                <Link
+                  onClick={closeNavCollapse}
+                  spy={true}
+                  className="nav-link"
+                  to="about"
+                >
                   About us
                 </Link>
               </li>
               <li className="nav-item mx-2">
-                <Link spy={true} className="nav-link" to="explore-food">
+                <Link
+                  onClick={closeNavCollapse}
+                  spy={true}
+                  className="nav-link"
+                  to="explore-food"
+                >
                   Explore Foods
                 </Link>
               </li>
               <li className="nav-item mx-2">
-                <Link spy={true} className="nav-link" to="testimonial">
+                <Link
+                  onClick={closeNavCollapse}
+                  spy={true}
+                  className="nav-link"
+                  to="testimonial"
+                >
                   Reviews
                 </Link>
               </li>
               <li className="nav-item mx-2">
-                <Link spy={true} className="nav-link" to="faq">
+                <Link
+                  onClick={closeNavCollapse}
+                  spy={true}
+                  className="nav-link"
+                  to="faq"
+                >
                   FAQ
                 </Link>
               </li>

@@ -18,7 +18,7 @@ const Home = () => {
                 </p>
 
                 <div className="mt-4">
-                  <button className="main-btn">
+                  <button className="main-btn mx-1 mx-md-0">
                     Order now <i className="fas fa-shopping-basket ps-3"></i>
                   </button>
                   <button className="main-btn ms-lg-4 mt-lg-0 mt-4">
